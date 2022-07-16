@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>好物good官网</title>
+    <script
+      charset="UTF-8"
+      id="LA_COLLECT"
+      src="//sdk.51.la/js-sdk-pro.min.js"
+    ></script>
+    <script>
+      LA.init({ id: "Jk87XxGZgnXUulOO", ck: "Jk87XxGZgnXUulOO" });
+    </script>
+    <style>
+          *{
+              margin: 0;
+              padding: 0;
+          }
+          .box{
+          width: auto;
+              height: auto;
+              margin: 0 auto;
+              display: flex;
+              flex-direction: column;
+          }
+          /* header设置 */
+          .box header{
+              background-color: #242a3a;
+              height: 8px;
+              display: flex;
+          }
+
+          header span{
+              width: 12px;
+              height: 125px;
+              line-height: px;
+              text-align: center;
+              font-size: 40px!important;
+              color: rgb(255, 255, 255);
+          }
+          header p{
+              flex: 1;
+              font-size: 20px;
+              color: white;
+              line-height: 125px;
+          }
+          /* 一般来说，行内元素无法设置宽高，但是只要提前加了弹性盒样式，就可以进行宽高的设置了
+          如果发现无法设置样式，不妨加个display：flex；添加弹性盒试试看
+          */
+          /* 因为主轴是交叉轴（即纵轴，也称侧轴），所以宽度不用再进行设置，只需要设置高度即可
+          换种解释：因为主轴是交叉轴，所以在不设置宽度的情况下，它会根据外面的父盒子进行自适应匹配
+          */
+          /* section设置 */
+          .box section{
+              /* background-color: grey; */
+              flex: 1;
+          }
+          .top{
+          display: flex;
+          height: 200px;
+          background-color: #242a3a;
+          justify-content: space-around;
+          align-items: center;
+            /* 将弹性<div> 元素的所有项目居中对齐 */
+      }
+      .top div{
+          width: 40px;
+          height: 165px;
+          background-color: #242a3a;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+      }
+      .top span{
+          font-size:104px;
+          color: white;
+      }
+      .top p{
+          color: white;
+          font-size:21 px;
+          text-align: center;
+      }
+      .list{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+            /* 自动换行 */
+          border-color: white;
+      }
+      .list div{
+          width: 33.3%;
+          height: 190px;
+          border: 1px solid #ebebeb;
+          box-sizing: border-box;
+           /* 设置怪异盒模型 */
+
+          display: block;
+          flex-direction: column;
+          justify-content: center;
+           /* 只能在父盒子中设置，设置在项目中无效 */
+      }
+      .list div span{
+          height: 69px;
+          text-align: center;
+          line-height: 63px;
+          font-size: 57px;
+      }
+      .list div p{
+          height: 63px;
+          text-align: center;
+          line-height: px;
+          font-size: 30px;
+      }
+      .list.bottom{
+          margin-top: 26px;
+      }
+      .list img{
+          margin-top: 20px;
+          margin-bottom: 20px;
+      }
+        /* footer设置 */
+      .box footer{
+          background-color: #fafbfd;
+          display: flex;
+          height: 125px;
+      }
+      .box footer div{
+          flex: 1;
+          flex-direction: column;
+          display: flex;
+}
+      .box footer div span{
+          height: 75px;
+          line-height: 75px;
+          text-align: center;
+          font-size: 60px;
+      }
+      .box footer div p{
+          height: 50px;
+          line-height: 50px;
+          text-align: center;
+      }
+      .box footer div:hover{
+          color:#01abdf;
+      }
+    </style>
+    <style>
+      .box1:hover {
+        color: blue;
+      }
+      .box1:active {
+        text-decoration: underline;
+      }
+      .box1 {
+        color: black;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="box">
+        <header>
+          <span
+            ><a class="box1" href="https://hovgood.gitee.io/"> <p>首页</p></a>
+          </span>
+        </header>
+        <section>
+          <div class="top">
+            <div>
+              <a class="box1" href="index2.html">
+                <span
+                  ><img src="\static\images\sousuo.png" width="30px"
+                /></span>
+                <p>搜索</p></a
+              >
+            </div>
+            <div>
+              <a class="box1" href="dy.html"
+                ><span>
+                  <img src="\static\images\dianying.png" width="30px"
+                /></span>
+                <p>观影</p></a
+              >
+            </div>
+
+            <div>
+              <a class="box1" href="book2.html"
+                ><span><img src="\static\images\shu.png" width="30px" /></span>
+                <p>找书</p></a
+              >
+            </div>
+            <div>
+              <a class="box1" href="mp3.html">
+                <span>
+                  <img src="\static\images\music.png" width="30px"
+                /></span>
+                <p>听歌</p></a
+              >
+            </div>
+          </div>
+          <div class="list">
+            <div>
+              <span class="leftmargin">
+                <a class="box1" href="disk2.html">
+                  <img src="\static\images\yunpan.png" width="60px" />
+                  <p>网盘搜索</p></a
+                ></span
+              >
+            </div>
+
+            <div>
+              <span class="leftmargin">
+                <a class="box1" href="wx.html"
+                  ><img src="\static\images\dianshiji.png" width="60px" />
+                  <p>微信观影</p></a
+                >
+              </span>
+            </div>
+
+            <div>
+              <span class="leftmargin">
+                <a
+                  class="box1"
+                  href="book2.html
+            "
+                  ><img src="\static\images\diantai.png" width="65px" />
+                  <p>听书广播</p></a
+                >
+              </span>
+            </div>
+            <div>
+              <span class="leftmargin">
+                <a
+                  class="box1"
+                  href="dm.html
+            "
+                  ><img src="\static\images\dongman.png" width="60px" />
+                  <p>动漫追番</p></a
+                >
+              </span>
+            </div>
+            <!-- <div><span  class="leftmargin"><a class="box1"  href="sq.html
+            "><img src="\static\images\tongqian.png"  width="60px">
+                <p>购物省钱</p></a>
+</span>
+</div> -->
+            <div>
+              <span class="leftmargin"
+                ><a
+                  class="box1"
+                  href="zx2.html
+            "
+                  ><img src="\static\images\fang.png" width="60px" />
+                  <p>装修搜索</p></a
+                >
+              </span>
+            </div>
+            <div>
+              <span class="leftmargin"
+                ><a
+                  class="box1"
+                  href="zq2.html
+            "
+                  ><img src="\static\images\qiandai.png" width="60px" />
+                  <p>理财引擎</p></a
+                >
+              </span>
+            </div>
+            <div>
+              <span class="leftmargin"
+                ><a
+                  class="box1"
+                  href="bbx.html
+            "
+                  ><img src="\static\images\haoping.png" width="60px" />
+                  <p>百宝箱</p></a
+                >
+              </span>
+            </div>
+            <div>
+              <span class="leftmargin"
+                ><a
+                  class="box1"
+                  href="fy.html
+            "
+                  ><img src="\static\images\yisheng.png" width="60px" />
+                  <p>疫情动态</p></a
+                >
+              </span>
+            </div>
+            <div>
+              <span class="leftmargin"
+                ><a class="box1" href="music2.html"
+                  ><img src="\static\images\yinyue.png" width="60px" />
+                  <p>搜歌下载</p></a
+                >
+              </span>
+            </div>
+            <!-- <div><span  class="leftmargin"><a class="box1"  href="sq.html
+            "><img src="\static\images\qiandai.png"  width="60px">
+                    <p>查病问医</p></a>
+</span>               </div>
+
+
+<div><span  class="leftmargin"><a class="box1"  href="sq.html
+            "><img src="\static\images\dianzan.png"  width="55px">
+                    <p>老人专用</p></a>
+                    </span>
+                </div> -->
+          </div>
+        </section>
+
+        <footer>
+          <!-- <div><span class="iconfont icon-zhifubao"></span>
+                <p>支付宝</p>
+                </div>
+                <div>
+                <span class="iconfont icon-koubei"></span>
+                <p>口碑</p>
+                </div>
+
+                <div>
+                <span class="iconfont icon-pengyou"></span>
+                <p>朋友</p>
+                </div>
+
+                <div>
+                    <span class="iconfont icon-wode"></span>
+                    <p>我的</p>
+                </div>
+-->
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"name": "search.qinggl.com-1",
+			"path": "..\\search.qinggl.com-1"
+		}
+	],
+	"settings": {
+		"lsby_gitee_vscode_plugin.personal_access_tokens": "d4251442699514f8a974eb1fc1ac718f",
+		"liveServer.settings.multiRootWorkspaceName": "search.qinggl.com",
+		"livePreview.defaultPreviewPath": "c:\\Users\\PC008\\Desktop\\表情包\\search.qinggl.com\\index.html"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.live-server"
+		]
+	}
+}

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: auto;
+            height: auto;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+        /* header设置 */
+        .box header{
+            background-color: #242a3a;
+            height: 8px;
+            display: flex;
+        }
+
+        header span{
+            width: 12px;
+            height: 125px;
+            line-height: px;
+            text-align: center;
+            font-size: 40px!important;
+            color: rgb(233, 0, 0);
+ 
+        }
+        header p{
+            flex: 1;
+            font-size: 20px;
+            color: white;
+            line-height: 125px;
+            
+        }
+        /* 一般来说，行内元素无法设置宽高，但是只要提前加了弹性盒样式，就可以进行宽高的设置了
+        如果发现无法设置样式，不妨加个display：flex；添加弹性盒试试看
+        */
+
+        /* 因为主轴是交叉轴（即纵轴，也称侧轴），所以宽度不用再进行设置，只需要设置高度即可
+        换种解释：因为主轴是交叉轴，所以在不设置宽度的情况下，它会根据外面的父盒子进行自适应匹配
+        */
+        /* section设置 */
+        .box section{
+            /* background-color: grey; */
+            flex: 1;
+        }
+ 
+      
+        .top{
+          display: flex;
+          height: 200px;
+          background-color: #242a3a;
+          justify-content: space-around;
+          align-items: center;
+          /* 将弹性<div> 元素的所有项目居中对齐 */
+      }
+      .top div{
+          width: 108px;
+          height: 165px;
+          background-color: #242a3a;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+      }
+      .top span{
+          font-size:104px;
+          color: white;
+      }
+      .top p{
+          color: white;
+          font-size: 32px;
+          text-align: center;
+      }
+ 
+      .list{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          /* 自动换行 */
+          border-color: white;
+      }
+ 
+    .list div{
+         width: 33.3%;
+         height: 208px;
+         border: 1px solid #ebebeb;
+         box-sizing: border-box;
+         /* 设置怪异盒模型 */
+ 
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         /* 只能在父盒子中设置，设置在项目中无效 */
+      }
+      .list div span{
+          height: 63px;
+          text-align: center;
+          line-height: 63px;
+          font-size: 57px;
+      }
+ 
+ 
+      .list div p{
+          height: 63px;
+          text-align: center;
+          line-height: 63px;
+          font-size: 30px;
+      }
+      .list.bottom{
+          margin-top: 26px;
+      }
+      .list img{
+          margin-top: 20px;
+          margin-bottom: 20px;
+      }
+      /* footer设置 */
+      .box footer{
+          background-color: #fafbfd;
+          display: flex;
+          height: 125px;
+      }
+      .box footer div{
+          flex: 1;
+          flex-direction: column;
+          display: flex;
+      }
+      .box footer div span{
+          height: 75px;
+          line-height: 75px;
+          text-align: center;
+          font-size: 60px;
+      }
+      .box footer div p{
+          height: 50px;
+          line-height: 50px;
+          text-align: center;
+      }
+      .box footer div:hover{
+          color:#01abdf;
+      }
+    </style>
+</head>
+<body>
+    
+ 
+    <div class="box">
+        <div class="box">
+            <header><span class="iconfont icon-zhangdan "></span><p>账单</p>
+                <span class="iconfont icon-tongxunlu"></span>
+                <span class="iconfont icon-fangdajing"></span>
+                <span class="iconfont icon-tianjia"></span>
+            </header>
+    
+            <section>
+                <div class="top">
+                    <div>
+                        <span class="iconfont icon-saoyisao"></span>
+                        <p>扫一扫</p>
+                    </div>
+    
+                    <div>
+                        <span class="iconfont icon-fukuan"></span>
+                        <p>付款</p>
+                    </div>
+    
+                    <div>
+                        <span class="iconfont icon-qiaquan"></span>
+                        <p>卡券</p>
+                    </div>
+    
+                    <div>
+                        <span class="iconfont icon-qinmifu"></span>
+                        <p>咻一咻</p>
+                    </div>
+                </div>
+    
+                <div class="list">
+                       
+                <div> <span class="iconfont icon-xinyongqiahuankuan" style="color: #ffb459;"></span>
+                <p>信用卡还款</p>
+                </div>
+    
+                <div><span class="iconfont icon-biji"style="color:#30b3e7;"></span>
+                <p>记账本</p>
+                </div>
+    
+                <div><span class="iconfont icon-gupiao"style="color:red;"></span>
+                <p>股票</p>
+                </div>
+    
+                <div><span class="iconfont icon-licai"style="color:#30b3e7;"></span><p>理财小工具</p>
+                </div>
+    
+                <div><span class="iconfont icon-shejiaotubiao-08"style="color:red"></span>
+                <p>淘宝</p>
+                </div>
+    
+                <div>
+                    <span class="iconfont icon-youxichongzhi"style="color:red"></span>
+                    <p>游戏充值</p>
+                </div>
+    
+                <div><span class="iconfont icon-qinmifu"style="color:red"></span>
+                <p>亲密付</p>
+                </div>
+    
+                <div><span class="iconfont icon-jipiao"style="color:#30b3e7;"></span>
+                <p>机票火车票</p>
+                </div>
+    
+                <div>
+                    <span class="iconfont icon-shoujichongzhi"style="color:#30b3e7;"></span>
+                    <p>手机充值</p>
+                </div>
+ 
+                <div>
+                    <span class="iconfont icon-zhuanzhang-"style="color:#30b3e7;"></span>
+                    <p>转账</p>
+                </div>
+    
+                <div>
+                    <span class="iconfont icon-meituan"style="color:red;"></span>
+                    <p>口碑外卖</p>
+                </div>
+    
+                <div>
+                    <span class="iconfont icon-lvhang"style="color:#30b3e7;"></span>
+                    <p>阿里旅行</p>
+                </div>
+            
+                    <img src="../img/127.png" alt="">
+ 
+                </div>
+            </section>
+    
+            <footer>
+                <div><span class="iconfont icon-zhifubao"></span>
+                <p>支付宝</p>
+                </div>
+ 
+                <div>
+                <span class="iconfont icon-koubei"></span>
+                <p>口碑</p>
+                </div>
+ 
+                <div>
+                <span class="iconfont icon-pengyou"></span>
+                <p>朋友</p>
+                </div>
+ 
+                <div>
+                    <span class="iconfont icon-wode"></span>
+                    <p>我的</p>
+                </div>
+ 
+            </footer>
+ 
+ 
+        </div>
+ 
+</body>
+</html>

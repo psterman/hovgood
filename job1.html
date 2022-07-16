@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link href="static/css/basic.css" type="text/css"rel="stylesheet" />
+<link href="static/css/index.css" type="text/css"rel="stylesheet" />		
+<link href="static/css/search.css" type="text/css"rel="stylesheet" />
+<link rel="canonical" href="//search.qinggl.com" />  
+<script type="text/javascript" src="static/js/jquery.min.js"></script>
+<script type="text/javascript" src="static/js/util.js"></script>
+<script type="text/javascript" src="static/js/lm.js"></script>
+<script type="text/javascript" src="static/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="static/js/select.js"></script>
+<script language=javascript>
+<!--
+function check(select){
+key = document.form1.word.value;
+switch(select){
+case 001: window.open('https://www.58.com/job/?key='+key);break;
+case 002: window.open('https://www.zhipin.com/job_detail/?query='+key);break;
+case 003: window.open('https://www.liepin.com/zhaopin/?inputFrom=www_index&workYearCode=0&key='+key);break;
+case 004: window.open('https://search.51job.com/list/000000,000000,0000,00,9,99,'+key+',1,1.html');break;
+case 005: window.open('https://www.linkedin.cn/incareer/jobs/search?keywords='+key);break;
+case 006: window.open('https://maimai.cn/web/search_center?type=feed&query='+key);break;
+case 007: window.open('https://www.lagou.com/jobs/list_'+key);break;
+case 008: window.open('https://www.ganji.com/job/?key='+key);break;
+case 009: window.open('https://www.jobcn.com/search/result.xhtml?s=search%2Ftop&p.includeNeg=1&p.keyword='+key);break;
+case 010: window.open('https://zhaopin.baidu.com/quanzhi?&query='+key);break;
+case 011: window.open('https://www.kanzhun.com/search/?query='+key);break;
+case 012: window.open('http://www.gaoxiaojob.com/job?keyword='+key);break;
+case 013: window.open('https://www.digitaling.com/search/jobs?kw='+key);break;
+case 014: window.open('https://zp.zbj.com/search/all?source=supei&zp='+key);break;
+case 015: window.open('https://www.wutongguo.com/xiaozhao?keyword='+key);break;
+case 016: window.open('https://s.yingjiesheng.com/search.php?area=&word='+key);break;
+case 017: window.open('https://www.haitou.cc/search?key='+key);break;
+case 018: window.open('https://www.cdpee.org.cn/job/?active='+key);break;
+case 020: window.open('http://tieba.baidu.com/f?kw='+key);break;
+case 021: window.open('http://www.baidu.com/s?rtt=2&tn=baiduwb&cl=2&wd='+key);break;
+case 022: window.open('http://weixin.sogou.com/weixin?type=2&query='+key);break;
+case 023: window.open('http://www.douban.com/search?search_text='+key);break;
+case 026: window.open('http://map.sogou.com/#lq='+key);break;
+case 027: window.open('http://map.baidu.com/m?word='+key);break;
+case 028: window.open('http://gouwu.sogou.com/shop?query='+key);break;
+case 029: window.open('https://search.douban.com/book/subject_search?search_text='+key);break;
+case 030: window.open('https://www.yandex.com/images/search?text='+key .htm);break;
+case 031: window.open('http://data.yule.baidu.com/s?word='+key .htm);break;
+case 033: window.open('http://image.haosou.com/i?q='+key .htm);break;
+case 036: window.open('https://music.163.com/#/search/m/?s='+key);break;
+case 211: window.open('http://www.kugou.com/common/search.php?keyword='+encodeURIComponent(key));break;
+case 212: window.open('http://mp3.baidu.com/m?f=ms&rf=idx&tn=baidump3&ct=134217728&lf=&rn=&word='+key);break;
+case 213: window.open('http://yuedu.sogou.com/search?keyword='+key);break;
+case 214: window.open('https://music.taihe.com/search?word='+key);break;
+case 101: window.open('http://www.google.com/cse?cx=partner-pub-6779091984393228%3A69q7uss5stz&ie=GB2312&q='+key);break;
+case 102: window.open('https://video.360kan.com/v?ie=utf-8&src=360sou_home&q='+key);break;
+case 103: window.open('https://aiqicha.baidu.com/s?q='+key);break;
+case 221: window.open('https://www.google.com.hk/search?safe=strict&hl=zh-CN&source=hp&ei=RYeuWoPrEISyswGswYHYCA&q='+key);break;
+case 223: window.open('https://weixin.sogou.com/weixin?type=2&s_from=input&query='+key);break;
+case 224: window.open('http://www.baidu.com/s?tn=sitesowang&word='+key);break;
+case 227: window.open('http://cn.bing.com/search?q='+encodeURIComponent(key));break;
+case 233: window.open('http://www.baidu.com/s?wd='+key);break;
+case 232: window.open('http://v.baidu.com/search.php?word='+key);break;
+case 237: window.open('http://www.baidu.com/s?tn=sitesowang&cl=3&rn=10&ct=0&lm=0&word=filetype%3Aall+'+key);break;
+case 238: window.open('https://www.base-search.net/Search/Results?lookfor='+key);break;
+case 239: window.open('http://pic.sogou.com/pics?query='+key);break;
+case 240: window.open('https://cn.bing.com/images/search?q='+key);break;
+case 241: window.open('http://www.baidu.com/s?cl=3&tn=sitesowang&f=5&wd=mtv下载 '+key);break;
+case 249: window.open('http://images.google.cn/images?complete=1&hl=zh-CN&q='+key);break;
+case 250: window.open('https://image.baidu.com/search/index?tn=baiduimage&ps=1&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&word='+key);break;
+case 251: window.open('https://v.sogou.com/v?query='+key);break;
+case 252: window.open('https://cn.bing.com/videos/search?q='+key);break;
+case 253: window.open('https://ai.taobao.com/search/index.htm?key='+key);break;
+case 255: window.open('http://search.zongheng.com/s?keyword='+key);break;
+case 256: window.open('http://www.soku.com/search_video/q_'+key);break;
+case 264: window.open('http://mp3.baidu.com/m?rn=&tn=baidump3&ct=134217728&lm=6&word='+key);break;
+case 269: window.open('http://so.hudong.com/s/doc/'+key);break;
+case 270: window.open('http://zhidao.baidu.com/q?ct=17&pn=0&tn=ikaslist&rn=10&word='+key);break;
+case 271: window.open('https://baike.baidu.com/item/'+key);break;
+case 274: window.open('http://www.baidu.com/s?tn=sitesowang&ct=&lm=&z=&rn=&word='+key);break;
+case 275: window.open('http://www.iciba.com/'+key);break;
+case 276: window.open('http://www.baidu.com/baidu?ie=gb2312&ct=1048576&cl=3&word='+key);break;
+case 278: window.open('http://zidian.cn.yahoo.com/result_en2cn.html?p='+key);break;
+case 279: window.open('http://dict.cn/search/?q='+key);break;
+case 280: window.open('http://www.lrts.me/search/book/'+key);break;
+case 281: window.open('https://hanyu.baidu.com/s?wd='+key);break;
+case 284: window.open('https://www.kugou.com/yy/html/search.html#searchType=song&searchKeyWord='+key);break;
+case 285: window.open('http://search.cctv.com/search.php?qtext='+encodeURIComponent(key));break;
+case 300: window.open('https://www.ximalaya.com/search/'+key);break;
+case 400: window.open('https://search.dxy.cn/?recommend=true&words='+key);break;
+case 500: window.open('http://www.baidu.com/s?tn=sitesowang&word='+key);break;
+case 502: window.open('http://v.baidu.com/v?word='+key);break;
+case 503: window.open('https://www.qingting.fm/search/all/'+key);break;
+case 504: window.open('http://www.kuwo.cn/search/list?key='+key);break;
+case 505: window.open('https://www.iciba.com/word?w='+key);break;
+case 506: window.open('http://s.weibo.com/weibo/'+key);break;
+case 507: window.open('http://tieba.baidu.com/f?kw='+key);break;
+case 508: window.open('https://www.ximalaya.com/search/'+key);break;
+case 509: window.open('http://xueshu.baidu.com/s?wd='+key);break;
+case 510: window.open('https://v.qq.com/x/search/?q='+key);break;
+case 600: window.open('https://www.mvyxws.com/index.php/vod/search?key='+key);break;
+case 700: window.open('http://xueshu.baidu.com/s?wd='+key);break;
+case 800: window.open('http://cn.bing.com/academic/search?q='+key);break;
+case 900: window.open('https://scholar.sogou.com/xueshu?query='+key);break;
+case 911: window.open('https://search.smzdm.com/?c=post&s='+key);break;
+case 920: window.open('http://epub.cnki.net/kns/brief/default_result.aspx'+key);break;
+case 990: window.open('https://www.qidian.com/search?kw='+key);break;
+case 950: window.open('https://quark.sm.cn/s?q='+key);break;
+case 991: window.open('https://scholar.google.com.hk/scholar?hl=zh-CN&as_sdt=0%2C5&q='+key);break;
+case 992: window.open('https://www.zhihu.com/search?type=content&q='+key);break;
+case 993: window.open('http://dict.youdao.com/search?q='+key);break;
+case 994: window.open('https://xueshu.so.com/s?ie=gb2312&shb=1&src=360sou_home&q='+key);break;
+case 995: window.open('https://scholar.cnki.net/home/search?sw=1&sw-input='+key);break;
+case 996: window.open('https://scholareye.cn/search/searchResult?searchtext='+key);break;
+case 997: window.open('https://www.wukong.com/search/?keyword='+key);break;
+case 998: window.open('https://hanyu.sogou.com/result?query='+key);break;
+case 635: window.open('https://www.tianyancha.com/search?key='+key);break;
+case 999: window.open('https://zh.wikihow.com/wikiHowTo?search='+key);break;
+}
+}
+//-->
+</script>
+<style type="text/css">
+.select-container,.select-container ul{
+border-color:#aa44dd;
+}
+.searchone,.searchone .init{
+background-color: #aa44dd;
+}
+.select-container input,.select-container li a:hover{
+color:#aa44dd;
+}
+.searchone .init{
+color:#ffffff;
+}
+.select-container span {
+    border-top-color: #aa44dd ;
+}
+ .submitbox { 
+    margin: -1%;
+    background-color: transparent;
+    width: auto;
+}
+.submitbox a {
+    background-color: #fff;
+    height: 50px;
+    line-height: 50px;
+}
+</style>
+<!--[if lt IE 9]>
+<script src="static/js/html5shiv.min.js"></script>
+<script src="static/js/respond.min.js"></script>
+<![endif]-->
+ 
+</head>
+<body>
+<div style="max-width:1000px;width:100%;text-align: center;margin-left:auto;margin-right:auto;background-color: #fff;font-size: 0;" class="topad">
+<script type="text/javascript" >
+qlm_top();
+</script>
+ </div>
+
+<div id="wrap">
+  <div class="form1"> 
+	  <div class="select-box"> 
+	         <div class="select-container">
+	        <span></span>
+	        <input type="text" readonly="readonly" class="select-input"         />
+	        <ul class="select-ul">
+	            <li >
+	                <a  href="https://hovgood.gitee.io/ab"  tid="0">首页</a>
+	            </li>
+	                <li >
+	                <a  href="https://hovgood.gitee.io/job.html"  tid="8">找工作</a>
+	            </li>
+	                <li >
+	                <a  href="javascript:;"  tid="1">新闻合集</a>
+	            </li>
+	                <li >
+	                <a  href="javascript:;"  tid="9">学术合集</a>
+	            </li>
+	                <li >
+	                <a  href="javascript:;"  tid="5">工具合集</a>
+	            </li>
+	                <li >
+	                <a  href="javascript:;"  tid="1461">女生专用</a>
+	            </li>
+	                <li >
+	                <a  href="javascript:;"  tid="1308">搜索专用</a>
+	            </li>
+	                <li >
+	                <a  href="javascript:;"  tid="1803">摸鱼专用</a>
+	            </li>
+	                <li >
+	                <a  href="javascript:;"  tid="5525">素材专用</a>
+	            </li>
+	        </ul>
+	   	 </div>
+
+		<div class="searchone">
+			<form name="form1" method="get"  action="https://www.baidu.com/s?wd="
+			style="margin: 0; padding: 0">
+				<input type="text" name="word" placeholder="输入关键词，点击下方按键搜索" class="key" id="s_text" />
+			</form>
+		</div>
+		</div>
+
+	<div class="submitbox" >
+ <a onclick="check(001)"  _type="58"   class="Highlight"    >58（需跳转直搜）</a>
+<a onclick="check(002)" _type="boss" class="Highlight"    >BOSS直聘</a>
+<a onclick="check(003)"  _type="liepin"   class="Highlight"    >猎聘职位</a>
+<a onclick="check(004)"  _type="51job"   class="Highlight"   >51job</a>
+<a onclick="check(005)"  _type="linkin"   class="Highlight"  >领英职位空缺</a>
+<a onclick="check(006)"  _type="mmai"   class="Highlight"    >脉脉工作群</a>
+<a onclick="check(007)"  _type="lagou"   class="Highlight"    >拉勾招聘</a>
+<a onclick="check(008)"  _type="ganji"   class="Highlight"    >赶集网本地招聘</a>
+<a onclick="check(009)"  _type="jobcn"   class="Highlight"    >卓博（需跳转搜）</a>
+<a onclick="check(010)"  _type="baidu"   class="Highlight"    >百度招聘</a>
+<a onclick="check(011)"  _type="kanzhun"  class="Highlight" >看准找工</a>
+<a onclick="check(012)"  _type="gaoxiao" class="Highlight" >高校生找工作</a>
+<a onclick="check(013)"  _type="shuying"   class="Highlight" >数英找工作</a>
+<a onclick="check(014)"  _type="zbj"   class="Highlight"    >猪八戒找工作</a>
+<a onclick="check(015)"  _type="wutongguo"   class="Highlight"   >梧桐果校招</a>
+<a onclick="check(016)"  _type="yingjiesheng"   class="Highlight"    >应届生</a>
+<a onclick="check(017)"  _type="haitou"   class="Highlight"    >海投网校招</a>
+<a onclick="check(018)"  _type="cdpee"   class="Highlight"    >残疾人就业</a>
+		<div class="clear"></div>
+		</div>	 
+</div>	 
+</div>
+<div  id="brother_tui"  style="max-width:640px;     margin-top: 20px;  background-color: #f9f9f9;  width:100%;    margin-left:auto;margin-right:auto;"> 
+<script type="text/javascript" 	>qlm_640();</script></div>
+<div   style="max-width:640px;  line-height:30px;   margin-top: 20px;  background-color: #f9f9f9;  width:100%;    margin-left:auto;margin-right:auto;"> </div>
+</body>
+<script>new SelectOne().Load("index_all_tid");</script>
+<script type='text/javascript'  charset='utf-8' src='static/js/529a34b3800649c7bfe2f58c4d011082.js'></script>
+<script type="text/javascript" src="static/js/login.js"></script>
+</html>
