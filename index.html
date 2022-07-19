@@ -14,136 +14,136 @@
       LA.init({ id: "Jk87XxGZgnXUulOO", ck: "Jk87XxGZgnXUulOO" });
     </script>
     <style>
-          *{
-              margin: 0;
-              padding: 0;
-          }
-          .box{
-          width: auto;
-              height: auto;
-              margin: 0 auto;
-              display: flex;
-              flex-direction: column;
-          }
-          /* header设置 */
-          .box header{
-              background-color: #242a3a;
-              height: 8px;
-              display: flex;
-          }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+      }
+      /* header设置 */
+      .box header {
+        background-color: #242a3a;
+        height: 8px;
+        display: flex;
+      }
 
-          header span{
-              width: 12px;
-              height: 125px;
-              line-height: px;
-              text-align: center;
-              font-size: 40px!important;
-              color: rgb(255, 255, 255);
-          }
-          header p{
-              flex: 1;
-              font-size: 20px;
-              color: white;
-              line-height: 125px;
-          }
-          /* 一般来说，行内元素无法设置宽高，但是只要提前加了弹性盒样式，就可以进行宽高的设置了
+      header span {
+        width: 12px;
+        height: 125px;
+        line-height: px;
+        text-align: center;
+        font-size: 40px !important;
+        color: rgb(255, 255, 255);
+      }
+      header p {
+        flex: 1;
+        font-size: 20px;
+        color: white;
+        line-height: 125px;
+      }
+      /* 一般来说，行内元素无法设置宽高，但是只要提前加了弹性盒样式，就可以进行宽高的设置了
           如果发现无法设置样式，不妨加个display：flex；添加弹性盒试试看
           */
-          /* 因为主轴是交叉轴（即纵轴，也称侧轴），所以宽度不用再进行设置，只需要设置高度即可
+      /* 因为主轴是交叉轴（即纵轴，也称侧轴），所以宽度不用再进行设置，只需要设置高度即可
           换种解释：因为主轴是交叉轴，所以在不设置宽度的情况下，它会根据外面的父盒子进行自适应匹配
           */
-          /* section设置 */
-          .box section{
-              /* background-color: grey; */
-              flex: 1;
-          }
-          .top{
-          display: flex;
-          height: 200px;
-          background-color: #242a3a;
-          justify-content: space-around;
-          align-items: center;
-            /* 将弹性<div> 元素的所有项目居中对齐 */
+      /* section设置 */
+      .box section {
+        /* background-color: grey; */
+        flex: 1;
       }
-      .top div{
-          width: 40px;
-          height: 165px;
-          background-color: #242a3a;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
+      .top {
+        display: flex;
+        height: 200px;
+        background-color: #242a3a;
+        justify-content: space-around;
+        align-items: center;
+        /* 将弹性<div> 元素的所有项目居中对齐 */
       }
-      .top span{
-          font-size:104px;
-          color: white;
+      .top div {
+        width: 40px;
+        height: 165px;
+        background-color: #242a3a;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
       }
-      .top p{
-          color: white;
-          font-size:21 px;
-          text-align: center;
+      .top span {
+        font-size: 104px;
+        color: white;
       }
-      .list{
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-            /* 自动换行 */
-          border-color: white;
+      .top p {
+        color: white;
+        font-size: 21 px;
+        text-align: center;
       }
-      .list div{
-          width: 33.3%;
-          height: 190px;
-          border: 1px solid #ebebeb;
-          box-sizing: border-box;
-           /* 设置怪异盒模型 */
+      .list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* 自动换行 */
+        border-color: white;
+      }
+      .list div {
+        width: 33.3%;
+        height: 190px;
+        border: 1px solid #ebebeb;
+        box-sizing: border-box;
+        /* 设置怪异盒模型 */
 
-          display: block;
-          flex-direction: column;
-          justify-content: center;
-           /* 只能在父盒子中设置，设置在项目中无效 */
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        /* 只能在父盒子中设置，设置在项目中无效 */
       }
-      .list div span{
-          height: 69px;
-          text-align: center;
-          line-height: 63px;
-          font-size: 57px;
+      .list div span {
+        height: 69px;
+        text-align: center;
+        line-height: 63px;
+        font-size: 57px;
       }
-      .list div p{
-          height: 63px;
-          text-align: center;
-          line-height: px;
-          font-size: 30px;
+      .list div p {
+        height: 63px;
+        text-align: center;
+        line-height: px;
+        font-size: 30px;
       }
-      .list.bottom{
-          margin-top: 26px;
+      .list.bottom {
+        margin-top: 26px;
       }
-      .list img{
-          margin-top: 20px;
-          margin-bottom: 20px;
+      .list img {
+        margin-top: 20px;
+        margin-bottom: 20px;
       }
-        /* footer设置 */
-      .box footer{
-          background-color: #fafbfd;
-          display: flex;
-          height: 125px;
+      /* footer设置 */
+      .box footer {
+        background-color: #fafbfd;
+        display: flex;
+        height: 125px;
       }
-      .box footer div{
-          flex: 1;
-          flex-direction: column;
-          display: flex;
-}
-      .box footer div span{
-          height: 75px;
-          line-height: 75px;
-          text-align: center;
-          font-size: 60px;
+      .box footer div {
+        flex: 1;
+        flex-direction: column;
+        display: flex;
       }
-      .box footer div p{
-          height: 50px;
-          line-height: 50px;
-          text-align: center;
+      .box footer div span {
+        height: 75px;
+        line-height: 75px;
+        text-align: center;
+        font-size: 60px;
       }
-      .box footer div:hover{
-          color:#01abdf;
+      .box footer div p {
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+      }
+      .box footer div:hover {
+        color: #01abdf;
       }
     </style>
     <style>
@@ -284,6 +284,17 @@
               <span class="leftmargin"
                 ><a
                   class="box1"
+                  href="https://ur.alipay.com/1B9q5RnvbkX0ixXdoZoDhs
+            "
+                  ><img src="\static\images\erweima.png" width="60px" />
+                  <p>健康码</p></a
+                >
+              </span>
+            </div>
+            <div>
+              <span class="leftmargin"
+                ><a
+                  class="box1"
                   href="fy.html
             "
                   ><img src="\static\images\yisheng.png" width="60px" />
@@ -299,7 +310,7 @@
                 >
               </span>
             </div>
-             <div>
+            <div>
               <span class="leftmargin"
                 ><a
                   class="box1"
@@ -309,7 +320,8 @@
                   <p>装修搜索</p></a
                 >
               </span>
-            </div> <div>
+            </div>
+            <div>
               <span class="leftmargin"
                 ><a
                   class="box1"
