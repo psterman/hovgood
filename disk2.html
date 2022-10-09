@@ -4,7 +4,7 @@
         <link rel="preconnect" href="//at.alicdn.com">
         <link rel="preconnect" href="//cdn.staticfile.org">
             <meta charset="utf-8">
-            <title>好物good</title>
+            <title>好物good网盘</title>
             <meta name="title" content="好物good官网">
         <meta name="keywords" content="好物good">
         <meta name="description" content="好物good提供各站资源聚合：百度，什么值得买，微信，知乎，...整合全网资源、简单高效工具。">
@@ -49,7 +49,37 @@ doBBBd()
 document.addEventListener('keyup', function(){_countAA-=10;doBBBd()}, false)
 document.addEventListener('click', function(){_countAA-=10;doBBBd()}, false)
 </script>
-
+<script language="javascript">
+function check(select){
+key = document.form1.word.value;
+switch(select){
+case 1: window.open('https://www.56wangpan.net/search/kw'+key);break;
+case 2: window.open('https://www.fastsoso.cn/search?k='+key);break;
+case 3: window.open('https://www.lingfengyun.com/search?wd='+key+'so_token=b8b1e6eaa299ae9ea11b675d50a759a7&so_file=wang_pan&so_source=all_pan');break;
+case 4: window.open('https://www.xiaozhukuaipan.com/s/search?q='+key);break;
+case 5: window.open('https://www.nmme.cc/s/1/'+key);break;
+case 6: window.open('https://www.xiaozhukuaipan.com/s/search?q='+key+'&currentPage=1');break;
+case 7: window.open('https://www.laisoyixia.com/s/search?q='+key+'&currentPage=1');break;
+case 8: window.open('https://www.alipansou.com/search?k='+key);break;
+case 9: window.open('https://www.upyunso.com/search.html?page=1&keyword='+key);break;
+case 10: window.open('https://www.xuebapan.com/s/'+key+'-1.html');break;
+case 11: window.open('https://www.iizhi.cn/resource/search/'+key+'?searchtype=1&searchway=1');break;
+case 12: window.open('https://www.laisoyixia.com/s/search?q='+key+'&currentPage=1');break;
+case 13: window.open('https://www.xiaobaipan.com/list-123'+key+'.html?from=1');break;
+case 14: window.open('https://www.sssoou.com/');break;
+case 15: window.open('https://www.upyunso.com/search.html?page=1&keyword='+key);break;
+case 17: window.open('https://www.56wangpan.net/search/kw'+key);break;
+case 18: window.open('https://www.sopandas.com/e/'+key);break;
+case 19: window.open('https://pan666.cn/?q='+key);break;
+case 20: window.open('https://www.pandada.net/all/s-ypzdn'+key+'.html');break;
+case 21: window.open('https://www.wosouyun.com/wd/'+key);break;
+case 22: window.open('https://www.58wangpan.com/search/kw'+key);break;
+case 23: window.open('https://www.pan131.com/yun/'+key+'/');break;
+case 24: window.open('https://www.45256.com/so/'+key+'/');break;
+case 25: window.open('https://www.sopanbar.com/search/kw'+key+'/');break;
+}
+}
+</script>
 <script type="text/javascript">
 $(document).ready(function () {
     var $container = $("div.node-list").infiniteScroll({
@@ -144,12 +174,12 @@ style="padding-bottom: 40px;">
                                             <div class="tab-nav-inner left">
                                                 <div class="tab-nav-inner-content" style="width:562.5px">
                                             <a href="https://hovgood.gitee.io/index2" class="tab-nav-item  " ><p>综合</p></a>
-                                            <a href="https://hovgood.gitee.io/zq2" class="tab-nav-item  " ><p></p></a>
+                                            <a href="https://hovgood.gitee.io/zq2" class="tab-nav-item  " ><p>理财</p></a>
                                             <a href="https://hovgood.gitee.io/job2" class="tab-nav-item "> <p>求职</p></a>
                                             <a href="https://hovgood.gitee.io/zx2" class="tab-nav-item "><p>装修</p></a>
                                             <a href="https://hovgood.gitee.io/book2" class="tab-nav-item "><p>阅读</p></a>
                                             <a href="https://hovgood.gitee.io/music2" class="tab-nav-item "><p>音乐</p></a>
-                                            <a href="https://hovgood.gitee.io/disk2" class="tab-nav-item active "><p></p></a>
+                                            <a href="https://hovgood.gitee.io/disk2" class="tab-nav-item active "><p>网盘</p></a>
                                             <a href="https://hovgood.gitee.io/gw" class="tab-nav-item "><p>购物</p></a>
                                             </div>
                                         </div>
@@ -215,7 +245,7 @@ h3 {text-align:center}</style>
                     <a  href="https://hovgood.gitee.io/music2"  tid="5"><h3>音乐</h3></a>
                 </li>
                     <li >
-                    <a  href="https://hovgood.gitee.io/disk2"  tid="6"><h3></h3></a>
+                    <a  href="https://hovgood.gitee.io/disk2"  tid="6"><h3>网盘</h3></a>
                 </li>   <li >
                     <a  href="https://hovgood.gitee.io/gw"  tid="6"><h3>购物</h3></a>
                 </li>
@@ -229,6 +259,27 @@ h3 {text-align:center}</style>
         </div>
         </div>
         <div class="submitbox" >
+<a onclick="check(2)" _type="kuwo" class="fastso"    >fastso度盘</a>
+<a href="https://www.xiaozhukuaipan.com/" _type="xiaopig"  class="Highlight" >小猪度盘</a>
+<a onclick="check(6)"  _type="pigrun"   class="Highlight" >猪快跑度盘</a>
+<a href="https://www.laisoyixia.com/"  _type="so1"   class="Highlight"  >来搜度盘</a>
+<a onclick="check(18)"  _type="xiaobai"   class="Highlight"    >熊猫度盘</a>
+<a href="https://www.xuebapan.com/"  _type="xueba"   class="Highlight"    >学霸度盘</a>
+<a onclick="check(25)"  _type="bar"   class="Highlight"    >度盘搜吧</a>
+<a onclick="check(24)"  _type="456"   class="Highlight"    >盘之家度盘</a>
+<a onclick="check(23)"  _type="131"   class="Highlight"    >盘131度盘</a>
+<a onclick="check(22)"  _type="58"   class="Highlight"    >58度盘</a>
+<a onclick="check(21)"  _type="wsy"   class="Highlight"    >我搜云度盘</a>
+<a onclick="check(20)"  _type="pdd"   class="Highlight"    >盘大大度盘</a>
+<a onclick="check(17)"  _type="56"   class="Highlight"    >56度盘</a>
+<a onclick="check(19)"  _type="limao"   class="Highlight"   >小站云盘</a>
+<a onclick="check(8)"  _type="limao"   class="Highlight"   >狸猫搜云盘</a>
+<a onclick="check(9)"  _type="upcloud"   class="Highlight"  >up云搜云盘</a>
+<a onclick="check(11)"  _type="bifangpu"   class="Highlight"    >毕方铺盘</a>
+<a onclick="check(5)"  _type="orange"   class="Highlight"  >桔子综合盘</a>
+<a onclick="check(14)"  _type="tele"   class="Highlight"   >电bao盘</a>
+<a onclick="check(3)"  _type="lingfengyun"   class="Highlight"    >凌风云盘</a>
+<a onclick="check(13)"  _type="xiaobai"   class="Highlight"    >小白搜夸克盘</a>
         <div class="clear"></div>
         </div>
 <div class="clear"></div>
